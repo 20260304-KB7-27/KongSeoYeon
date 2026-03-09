@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+
+      /*
+      position fixed : 고정 레이아웃
+
+      특징
+      - 스크롤을 내려도 화면의 특정 위치에 고정
+      - 일반적인 문서 흐름에서 제외되어 다른 요소들의 위치를 무시함.
+      */
+
+      .top_bar {
+        background-color: red;
+        height: 50px;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+      }
+
+      .left_bar {
+        background-color: blue;
+        width: 50px;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_bar"></div>
+    <div class="left_bar"></div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+        maxime illo dolore est similique repellendus molestiae iure officiis
+        sunt assumenda consequatur, quia mollitia beatae recusandae delectus
+        atque reiciendis! Quam fugit aliquam omnis ea praesentium. Eligendi
+        tempore, ad magni earum praesentium voluptas nobis. Culpa repudiandae
+        enim optio quae, qui consequuntur quia nihil placeat harum vitae atque
+        officia nam explicabo, veniam excepturi quidem officiis tempore quas.
+        Aliquam natus magnam quaerat quidem expedita officia dignissimos
+        assumenda accusamus similique sed incidunt vero ipsa omnis vel
+        molestiae, modi quis fuga? Quidem vitae voluptate ullam error rerum
+        eaque neque et iusto? Eius officiis quam odit quidem?
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+        maxime illo dolore est similique repellendus molestiae iure officiis
+        sunt assumenda consequatur, quia mollitia beatae recusandae delectus
+        atque reiciendis! Quam fugit aliquam omnis ea praesentium. Eligendi
+        tempore, ad magni earum praesentium voluptas nobis. Culpa repudiandae
+        enim optio quae, qui consequuntur quia nihil placeat harum vitae atque
+        officia nam explicabo, veniam excepturi quidem officiis tempore quas.
+        Aliquam natus magnam quaerat quidem expedita officia dignissimos
+        assumenda accusamus similique sed incidunt vero ipsa omnis vel
+        molestiae, modi quis fuga? Quidem vitae voluptate ullam error rerum
+        eaque neque et iusto? Eius officiis quam odit quidem?
+      </p>
+    </div>
+  </body>
+</html>
