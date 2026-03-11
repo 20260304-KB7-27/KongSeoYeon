@@ -7,7 +7,7 @@
     <script>
       window.onload = function () {
         // 요소 찾기
-        const clock = document.getElementById('clock');
+        let clock = document.getElementById('clock');
 
         // this
         // 객체에서 this -> 그 객체
@@ -16,10 +16,10 @@
 
         setInterval(function () {
           let now = new Date();
-        //   console.log(now);
+          // console.log(now);
           clock.innerHTML = now.toString();
-          console.log(this);
-        }, 1000);
+          console.log(this); // window 객체 가리킴
+        }, 1000); // 1000ms = 1s
       };
     </script>
   </head>
