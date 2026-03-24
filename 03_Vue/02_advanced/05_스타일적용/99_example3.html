@@ -53,6 +53,7 @@
               <h2>{{ selectedPost.title }}</h2>
               <p>{{ selectedPost.content }}</p>
               <button @click.stop="editPost(post)">수정</button>
+              <button @click.stop="deletePost(post)">삭제</button>
               <button @click.stop="selectedPost = null">닫기</button>
             </div>
           </div>
@@ -187,6 +188,16 @@
             post.isEditing = true;
             post.isEditing = true;
           };
+
+          const deletePost = (post) => {
+            const isOk = confirm('정말로 삭제하시겠습니까?');
+
+            if (!isOk) return;
+
+            posts.value = posts.value.filter((p) => p.no !== post.no);
+
+            selectPost.value = null;
+          };
           const selectedPost = ref(null);
           const selectPost = (post) => {
             selectedPost.value = post;
@@ -211,6 +222,7 @@
             editPost,
             savePost,
             cancelEdit,
+            deletePost,
           };
         },
       }).mount('#app');
