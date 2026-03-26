@@ -19,4 +19,4 @@ const props = defineProps({
 const emit = defineEmits(['delete-post']);
 </script>
 
-<style lang="scss" scoped></style>
+<style></style>

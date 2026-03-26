@@ -1,7 +1,15 @@
 <template>
-  <div>
-    <input v-model="title" placeholder="제목" />
-    <input v-model="content" placeholder="내용" />
+  <div class="form-box">
+    <input
+      style="margin-right: 5px"
+      v-model="title"
+      placeholder="새 게시글 제목"
+    />
+    <input
+      style="margin-right: 5px"
+      v-model="content"
+      placeholder="새 게시글 내용"
+    />
     <button @click="add">작성</button>
   </div>
 </template>
@@ -27,8 +35,4 @@ const add = () => {
 };
 </script>
 
-<style lang="scss" scoped>
-input {
-  margin-right: 5px;
-}
-</style>
+<style></style>
